@@ -7,6 +7,6 @@ Ejercicio 2.4 – Captura ejercicio2-4
 
 Ejercicio 3 - 
 
-Ejercicio 4 - 
+Ejercicio 4 - Box.sol. Después de ver los ejemplos de la documentación de Solidity y los del OpenZeppelin, me quedé con el primero de OpenZeppelin porque es el más sencillo y más claro.
 
 Ejercicio 5 -
