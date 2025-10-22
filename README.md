@@ -9,4 +9,4 @@ Ejercicio 3 - Subo todos los archivos generados por mi, incluso los subidos por 
 
 Ejercicio 4 - Box.sol. Después de ver los ejemplos de la documentación de Solidity y los del OpenZeppelin, me quedé con el primero de OpenZeppelin porque es el más sencillo y más claro.
 
-Ejercicio 5 -
+Ejercicio 5 - donate.sol y documentación.
