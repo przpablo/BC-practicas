@@ -9,8 +9,8 @@ contract DonationPlatform {
     uint256 public pointsPerEth;     
 
     // --- Estado por usuario ---
-    mapping(address => uint256) public donations;   
-    mapping(address => uint256) public donorPoints;
+    mapping(address => uint256) private donations;   
+    mapping(address => uint256) private donorPoints;
 
     // --- Eventos ---
     event DonationReceived(
@@ -94,8 +94,8 @@ contract DonationPlatform {
 
     function _processDonation(address donor, uint256 amount) internal {
         // Cálculo de reparto
-        uint256 commission = (amount * commissionRate) / 100;
-        uint256 donation   = amount - commission;
+        uint256 donation = (amount * commissionRate) / 100;
+        uint256 commission   = amount - donation;
 
         // Efectos: acumular métricas
         donations[donor] += amount;
