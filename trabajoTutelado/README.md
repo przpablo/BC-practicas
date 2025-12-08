@@ -29,8 +29,12 @@ docker exec ipfs_host ipfs config --json API.HTTPHeaders.AccessControl-Allow-Ori
 ```
 
 ## Ejecución
+Solo la primera vez
 ```bash
-npm install -g serve
+npm install -g serve 
+```
+
+```bash
 serve -l 3000
 ```
 
