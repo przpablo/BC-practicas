@@ -14,6 +14,7 @@ Aplicación descentralizada (DApp) para la gestión, emisión y validación de t
 ```bash
 cd dapp_tickets
 npm install
+```
 
 ## Ejecución del docker
 
@@ -23,14 +24,15 @@ docker run -d --name ipfs_host -v $PWD:/export -v $PWD:/data/ipfs -p
 4001:4001 -p 4001:4001/udp -p 127.0.0.1:8080:8080 -p
 127.0.0.1:5001:5001 ipfs/kubo
 
-```bash
 docker exec ipfs_host ipfs config --json API.HTTPHeaders.AccessControl-Allow-Origin '["http://0.0.0.0:5001", "http://localhost:3000",
 "http://127.0.0.1:5001", "https://webui.ipfs.io"]'
+```
 
 ## Ejecución
 ```bash
 npm install -g serve
 serve -l 3000
+```
 
 ## Uso
 
